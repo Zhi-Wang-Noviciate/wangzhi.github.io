@@ -1,0 +1,337 @@
+{
+	"article_info": {
+		"sentences": [{
+			"sentence": "<h3>The Ants(\u2005\u8682\u8681\u2005) and the Grasshopper(\u2005\u8757\u866b\u2005)</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "It was a fine winter day, and the ants(\u2005\u8682\u8681\u2005) were storing away(\u2005\u8d2e\u5b58\u2005) all the food they had collected(\u2005\u6536\u96c6\u2005) in the summer.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "A very hungry grasshopper(\u2005\u8757\u866b\u2005) passed by and asked them for something to eat.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "The ants(\u2005\u8682\u8681\u2005) asked him, \u201cWhy didn\u2019t you collect(\u2005\u6536\u96c6\u2005) any food during the summer?\u201d",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "He replied(\u2005\u56de\u590d\u2005), \u201cI didn\u2019t have any spare(\u2005\u7a7a\u95f2\u7684\u2005) time\u2014I spent the days singing.\u201d",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "Then they said, \u201cIf you were foolish(\u2005\u611a\u8822\u7684\u2005) enough to sing all summer, you must dance hungry to bed in the winter.\u201d",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: Prepare(\u2005\u51c6\u5907\u2005) today for the needs of tomorrow.",
+			"type": "moral",
+			"pic_url": "http://ali.baicizhan.com/readin/images/9_73_430_20170321180658_88317.jpg"
+		}, {
+			"sentence": "<h3>The Astronomer(\u2005\u5929\u6587\u5b66\u5bb6\u2005)</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "An astronomer(\u2005\u5929\u6587\u5b66\u5bb6\u2005) used to go out every night to look at the stars.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "One night, while looking up to the skies, he fell into a well.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "Someone who heard his cries, ran up to him, and said,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "\u201cWhile you are trying to learn about the mysteries(\u2005\u5965\u79d8\u2005) of heaven(\u2005\u5929\u7a7a\u2005), you miss(\u2005\u9519\u8fc7\u2005) the common things under your feet.\u201d",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: We should never look so high that we miss(\u2005\u9519\u8fc7\u2005) seeing the things around us.",
+			"type": "moral",
+			"pic_url": ""
+		}, {
+			"sentence": "<h3>The Bald(\u2005\u79c3\u5934\u7684\u2005) Man and the Fly</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "A fly bit(\u2005\u53ee\u2005) the head of a bald(\u2005\u79c3\u5934\u7684\u2005) man who, trying to kill it, only succeeded in hitting himself hard on the head.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "Escaping(\u2005\u9003\u8131\u2005), the fly made fun(\u2005\u73a9\u7b11\u2005) of him, saying,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "\u201cYou who have wished to revenge(\u2005\u62a5\u590d\u2005), even with death, the bite(\u2005\u53ee\u2005) of a tiny insect(\u2005\u6606\u866b\u2005),",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "see what harm(\u2005\u4f24\u5bb3\u2005) you have done to yourself in the process!\u201d",
+			"type": "con",
+			"pic_url": ""
+		}, {
+			"sentence": "The bald(\u2005\u79c3\u5934\u7684\u2005) man replied(\u2005\u56de\u7b54\u2005), \u201cI hurt(\u2005\u5f04\u4f24\u2005) myself by mistake(\u2005\u65e0\u610f\u4e2d\u2005), but you hurt(\u2005\u5f04\u4f24\u2005) me on purpose.",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "I wish that I could have killed you, even if by doing so I had hurt(\u2005\u5f04\u4f24\u2005) myself even more!\u201d",
+			"type": "con",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: Don\u2019t hurt(\u2005\u5f04\u4f24\u2005) yourself to get revenge(\u2005\u62a5\u590d\u2005) on another.",
+			"type": "moral",
+			"pic_url": ""
+		}, {
+			"sentence": "<h3>The Bee(\u2005\u871c\u8702\u2005) and Zeus</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "A queen(\u2005\u738b\u540e\u2005) bee(\u2005\u871c\u8702\u2005) flew up to heaven(\u2005\u5929\u56fd\u2005) to give Zeus some fresh honey(\u2005\u8702\u871c\u2005).",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "Zeus, happy with the gift(\u2005\u5bf9...\u611f\u5230\u6ee1\u610f\u2005), promised(\u2005\u8bb8\u8bfa\u2005) to give her whatever she should ask for.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "She said, \u201cGive me a sting(\u2005\uff08\u6606\u866b\u7684\uff09\u523a\u2005), so if any man tries to take my honey(\u2005\u8702\u871c\u2005), I can hurt(\u2005\u4f24\u5bb3\u2005) him.\u201d",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "Zeus was very unhappy, as he loved men, but could not refuse(\u2005\u62d2\u7edd\u2005) because of his promise(\u2005\u8bfa\u8a00\u2005).",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "He then answered the bee(\u2005\u871c\u8702\u2005), \u201cYou shall have your sting(\u2005\uff08\u6606\u866b\u7684\uff09\u523a\u2005), but it will cost you your own life.",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "If you use your sting(\u2005\uff08\u6606\u866b\u7684\uff09\u523a\u2005), it will stay in their body, and you will die from the loss of it.\u201d",
+			"type": "con",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: By hurting(\u2005\u4f24\u5bb3\u2005) others, we often hurt(\u2005\u4f24\u5bb3\u2005) ourselves.",
+			"type": "moral",
+			"pic_url": ""
+		}, {
+			"sentence": "<h3>The Bees(\u2005\u871c\u8702\u2005) and the Beekeeper(\u2005\u517b\u8702\u4eba\u2005)</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "A thief(\u2005\u5c0f\u5077\u2005) got into a beekeeper(\u2005\u517b\u8702\u4eba\u2005)\u2019s property when its owner was away and stole(\u2005\u5077\u7a83\u2005) all the honey(\u2005\u8702\u871c\u2005).",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "When the owner came back and saw that the honey(\u2005\u8702\u871c\u2005) was gone,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "he stood there thinking about what had happened.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "The bees(\u2005\u871c\u8702\u2005) then came back to their home and when they found the beekeeper(\u2005\u517b\u8702\u4eba\u2005) there,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "they attacked him fiercely(\u2005\u731b\u70c8\u5730\u2005) with their stings(\u2005\uff08\u6606\u866b\u7684\uff09\u523a\u2005).",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "The beekeeper(\u2005\u517b\u8702\u4eba\u2005) said to the bees(\u2005\u871c\u8702\u2005), \u201cYou stupid(\u2005\u611a\u8822\u7684\u2005) creatures(\u2005\u751f\u7269\u2005)!",
+			"type": "con_start",
+			"pic_url": ""
+		}, {
+			"sentence": "You let the man who stole(\u2005\u5077\u7a83\u2005) your honey(\u2005\u8702\u871c\u2005) get away unpunished(\u2005\u672a\u53d7\u60e9\u7f5a\u7684\u2005),",
+			"type": "con",
+			"pic_url": ""
+		}, {
+			"sentence": "while you direct your anger at me, the person who takes care of you and tries to protect(\u2005\u4fdd\u62a4\u2005) you!\u201d",
+			"type": "con",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: People often blame(\u2005\u628a...\u5f52\u548e\u4e8e\u2005) their misfortunes(\u2005\u4e0d\u5e78\u2005) on their friends, rather than their enemies(\u2005\u654c\u4eba\u2005).",
+			"type": "moral",
+			"pic_url": ""
+		}, {
+			"sentence": "<h3>The Belly(\u2005\u80c3\u2005) and the Body Parts</h3>",
+			"type": "title",
+			"pic_url": ""
+		}, {
+			"sentence": "One day, all the body parts realized(\u2005\u610f\u8bc6\u5230\u2005) that they were doing all the work,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "and the belly(\u2005\u80c3\u2005) was getting all the food.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "They held a meeting, and after a long discussion(\u2005\u8ba8\u8bba\u2005), decided to stop work until the belly(\u2005\u80c3\u2005) agreed to help.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "So for a day or two, the hands refused(\u2005\u62d2\u7edd\u2005) to take food,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "the mouth refused(\u2005\u62d2\u7edd\u2005) to receive(\u2005\u63a5\u53d7\u2005) it,",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "and the teeth(\u2005\u7259\u9f7f\u2005) had no work to do.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "But after a few days, the other body parts began to find that they were not in good condition.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "The hands could hardly move, and the mouth was dry, while the legs were unable to support the body.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "They found that even the belly(\u2005\u80c3\u2005), in its quiet way, was doing necessary work.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "They all must work together or the body will go to pieces.",
+			"type": "",
+			"pic_url": ""
+		}, {
+			"sentence": "MORAL: It takes all kinds of people to make human society work.",
+			"type": "moral",
+			"pic_url": ""
+		}],
+		"previous": "\u5728\u6628\u5929\u7684\u6545\u4e8b\u91cc\uff0c\u8682\u8681\u5632\u7b11\u6b63\u5728\u8715\u53d8\u7684\u6bdb\u866b\uff0c\u6bdb\u866b\u6700\u540e\u5316\u8327\u6210\u8776\uff0c\u53d8\u6210\u4e86\u4e00\u53ea\u6f02\u4eae\u7684\u8774\u8776\uff0c\u8fd9\u4e2a\u6545\u4e8b\u544a\u8bc9\u6211\u4eec\u4e0d\u8981\u4ee5\u9762\u8c8c\u6765\u8bc4\u4ef7\u4e00\u4e2a\u4eba\u3002",
+		"audio_info": {
+			"audio_name": "1488872740_Aesop's Fables_1445_1.mp3",
+			"time_list": [0, 3.07, 13.7, 20.47, 27.1, 35.0, 46.09, 52.13, 54.86, 61.36, 68.22, 74.03, 83.51, 92.49, 95.47, 108.29, 112.94, 121.07, 126.67, 135.62, 145.7, 152.11, 154.86, 161.06, 169.75, 179.96, 189.26, 198.46, 207.03, 213.19, 217.3, 228.0, 233.36, 237.77, 245.41, 249.44, 255.2, 261.41, 271.15, 279.23, 282.73, 290.19, 293.66, 304.33, 310.78, 314.14, 317.74, 327.41, 338.3, 346.82, 353.82],
+			"audio_url": "http://ali.baicizhan.com/readin/audios/1488872740_Aesop's%20Fables_1445_1.mp3",
+			"audio_info_by_speed": {
+				"slow": {
+					"audio_name": "1488872740_Aesop's Fables_1445_1.mp3",
+					"time_list": [0, 3.07, 13.7, 20.47, 27.1, 35.0, 46.09, 52.13, 54.86, 61.36, 68.22, 74.03, 83.51, 92.49, 95.47, 108.29, 112.94, 121.07, 126.67, 135.62, 145.7, 152.11, 154.86, 161.06, 169.75, 179.96, 189.26, 198.46, 207.03, 213.19, 217.3, 228.0, 233.36, 237.77, 245.41, 249.44, 255.2, 261.41, 271.15, 279.23, 282.73, 290.19, 293.66, 304.33, 310.78, 314.14, 317.74, 327.41, 338.3, 346.82, 353.82],
+					"audio_url": "http://ali.baicizhan.com/readin/audios/1488872740_Aesop's%20Fables_1445_1.mp3"
+				},
+				"normal": {
+					"audio_name": "1488871781_Aesop's Fables_1445_0.mp3",
+					"time_list": [0, 2.59, 11.2, 16.63, 22.16, 28.46, 37.56, 42.46, 44.71, 49.93, 55.5, 60.14, 67.84, 74.83, 77.69, 88.02, 91.83, 98.41, 103.03, 110.17, 118.44, 123.72, 125.89, 131.04, 138.08, 146.29, 153.86, 161.41, 168.3, 173.45, 176.7, 185.5, 189.74, 193.01, 199.46, 202.75, 207.49, 212.48, 220.42, 227.12, 229.79, 235.92, 238.83, 247.33, 252.63, 255.32, 258.23, 266.0, 274.86, 282.01, 287.74],
+					"audio_url": "http://ali.baicizhan.com/readin/audios/1488871781_Aesop's%20Fables_1445_0.mp3"
+				},
+				"fast": {
+					"audio_name": "1488873583_Aesop's Fables_1445_2.mp3",
+					"time_list": [0, 1.71, 8.56, 12.86, 16.96, 21.86, 28.82, 32.58, 34.33, 38.44, 42.76, 46.36, 52.32, 57.85, 59.8, 67.79, 70.64, 75.77, 79.29, 84.9, 91.12, 95.29, 96.87, 100.79, 106.36, 112.72, 118.56, 124.3, 129.72, 133.55, 136.11, 142.78, 146.06, 148.81, 153.47, 156.09, 159.74, 163.78, 169.68, 174.86, 177.0, 181.61, 183.85, 190.52, 194.6, 196.61, 198.87, 204.93, 211.87, 217.12, 221.42],
+					"audio_url": "http://ali.baicizhan.com/readin/audios/1488873583_Aesop's%20Fables_1445_2.mp3"
+				}
+			}
+		},
+		"words_count": 598,
+		"share_words": "Prepare today for the needs of tomorrow. We should never look so high that we miss seeing the things around us.",
+		"title_en": "*DAY2",
+		"article_title": "Chapter 2"
+	},
+	"problem_info": [{
+		"question": {
+			"cn": "\u5728\u6545\u4e8bThe Ants and the Grasshopper\u4e2d\uff0c\u8682\u86b1\u4e3a\u4ec0\u4e48\u6ca1\u6709\u5728\u590f\u5929\u50a8\u5b58\u98df\u7269\uff1f",
+			"en": "In the story the Ants and the Grasshopper, why didn't the grasshopper collect any food during summertime?"
+		},
+		"options": [{
+			"cn": "\u56e0\u4e3a\u4ed6\u6574\u5929\u6574\u5929\u7684\u5531\u6b4c\u3002",
+			"en": "Because he spent his days singing."
+		}, {
+			"cn": "\u56e0\u4e3a\u4ed6\u4e0d\u80fd\u627e\u5230\u8db3\u591f\u7684\u98df\u7269\u3002",
+			"en": "Because he couldn't find enough food."
+		}, {
+			"cn": "\u56e0\u4e3a\u4ed6\u592a\u61d2\u4e86\u3002",
+			"en": "Because he was too lazy to store any food."
+		}],
+		"answer": [0],
+		"analysis": ["\u6587\u4e2d\u63d0\u5230\uff1a\u201cI didn't have any spare time, I spent the days singing.\u201d\u7531\u6b64\u53ef\u77e5\uff0c\u8682\u86b1\u5728\u590f\u5929\u7684\u65f6\u5019\u628a\u65f6\u95f4\u7528\u6765\u5531\u6b4c\uff0c\u6240\u4ee5\u6ca1\u6709\u50a8\u5b58\u51ac\u5929\u7684\u98df\u7269\uff0c\u56e0\u6b64\u9009A\u3002"]
+	}, {
+		"question": {
+			"cn": "\u5728\u6545\u4e8bThe Astronomer\u4e2d\uff0c\u5929\u6587\u5b66\u5bb6\u4e3a\u4ec0\u4e48\u4f1a\u6454\u8fdb\u4e95\u91cc\uff1f",
+			"en": "In the story the Astronomer, why did the astronomer fall into a well?"
+		},
+		"options": [{
+			"cn": "\u56e0\u4e3a\u5929\u592a\u9ed1\u4e86\u3002",
+			"en": "Because it was too dark."
+		}, {
+			"cn": "\u56e0\u4e3a\u4ed6\u53ea\u5173\u6ce8\u5929\u7a7a\u800c\u5ffd\u89c6\u4e86\u5730\u9762\u3002",
+			"en": "Because he focused too much on the sky and missed the things on the ground."
+		}, {
+			"cn": "\u56e0\u4e3a\u4ed6\u662f\u778e\u5b50\u3002",
+			"en": "Because he was blind."
+		}],
+		"answer": [1],
+		"analysis": ["\u6587\u4e2d\u63d0\u5230\u5929\u6587\u5bb6\u7684\u90bb\u5c45\u8bf4\uff1a\u201cwhile you are trying to learn about the mysteries of heaven, you miss the common things under your feet.\u201d\u56e0\u6b64\u9009B\u3002"]
+	}, {
+		"question": {
+			"cn": "\u5728\u6545\u4e8bThe Bee and Zeus\u4e2d\uff0c\u4e3a\u4ec0\u4e48\u871c\u8702\u60f3\u8981\u4e00\u6839\u523a\uff1f",
+			"en": "In the story the Bee and Zeus, why did the bee ask to have a sting?"
+		},
+		"options": [{
+			"cn": "\u4fdd\u62a4\u81ea\u5df1\u7684\u8702\u871c\u3002",
+			"en": "To protect her honey."
+		}, {
+			"cn": "\u4e0e\u5176\u4ed6\u871c\u8702\u6597\u4e89\u3002",
+			"en": "To fight the other bees."
+		}, {
+			"cn": "\u548c\u5176\u4ed6\u6606\u866b\u6597\u4e89\u3002",
+			"en": "To fight with other insects."
+		}],
+		"answer": [0],
+		"analysis": ["\u6587\u4e2d\u63d0\u5230 she said, \u201cGive me a sting, so if any man tries to take my honey, I can hurt him.\u201d \u53ef\u77e5\uff0c\u871c\u8702\u60f3\u8981\u4e00\u6839\u523a\u7684\u539f\u56e0\u662f\u8981\u4fdd\u62a4\u81ea\u5df1\u7684\u8702\u871c\uff0c\u56e0\u6b64\u9009A\u3002"]
+	}, {
+		"question": {
+			"cn": "\u5728\u6545\u4e8bThe Bee and the Beekeepers\u4e2d\uff0c\u8c01\u5077\u4e86\u871c\u8702\u7684\u8702\u871c\uff1f",
+			"en": "In the story the Bees and the Beekeeper, who stole the honey?"
+		},
+		"options": [{
+			"cn": "\u517b\u8702\u4eba\u3002",
+			"en": "The beekeeper."
+		}, {
+			"cn": "\u5c0f\u5077\u3002",
+			"en": "A thief."
+		}, {
+			"cn": "\u718a\u3002",
+			"en": "A bear."
+		}],
+		"answer": [1],
+		"analysis": ["\u6587\u4e2d\u63d0\u5230\uff1a\u201c a thief got into a beekeeper's property when its owner was away and stole all the honey...\u201d \u7531\u6b64\u53ef\u77e5\uff0c\u5c0f\u5077\u5077\u8d70\u4e86\u8702\u871c\uff0c\u56e0\u6b64\u9009B\u3002"]
+	}, {
+		"question": {
+			"cn": "\u5728\u6545\u4e8bThe Belly and the Body Parts\u4e2d\uff0c\u4e3a\u4ec0\u4e48\u8eab\u4f53\u7684\u5176\u4ed6\u5668\u5b98\u62d2\u7edd\u5de5\u4f5c\uff1f",
+			"en": "In the story the Belly and the Body Parts, why did other body parts refuse to work?"
+		},
+		"options": [{
+			"cn": "\u4ed6\u4eec\u8ba4\u4e3a\u80c3\u5f97\u5230\u6240\u6709\u98df\u7269\u5f88\u4e0d\u516c\u5e73\u3002",
+			"en": "They thought it was unfair that the belly got all the food."
+		}, {
+			"cn": "\u4ed6\u4eec\u6ca1\u6709\u5f97\u5230\u8db3\u591f\u7684\u80fd\u91cf\u3002",
+			"en": "They didn't have enough energy to move."
+		}, {
+			"cn": "\u4ed6\u4eec\u7684\u72b6\u6001\u4e0d\u597d\u3002",
+			"en": "They were not in good condition."
+		}],
+		"answer": [0],
+		"analysis": ["\u6587\u4e2d\u8eab\u4f53\u5176\u4ed6\u5668\u5b98\u8ba4\u8bc6\u5230 \uff0c\u201cThey thought it was unfair that they did all the work but the belly got all the food.\u201d\u6240\u4ee5\u5b83\u4eec\u8ba8\u8bba\u51b3\u5b9a\u62b5\u5236\u5de5\u4f5c\uff0c\u76f4\u5230\u80c3\u540c\u610f\u5e2e\u52a9\u4ed6\u4eec\uff0c\u56e0\u6b64\u9009A\u3002"]
+	}],
+	"book_cover_img_url": "http://ali.baicizhan.com/readin/images/yisuo-cover.png",
+	"book_show_img_url": "http://ali.baicizhan.com/readin/images/yisuo-show.png",
+	"share_img_url": "http://ali.baicizhan.com/readin/images/share-aesop-v1.jpg",
+	"current_chapter": 2,
+	"book_name": "Aesop's Fables",
+	"book_name_cn": "\u4f0a\u7d22\u5bd3\u8a00",
+	"bid": 25,
+	"total_words_of_term": 63776,
+	"user_submit": [1, 1, 0, 1, 1],
+	"is_term_finish": false,
+	"term_start_day": "2017-11-16",
+	"share_title": "100\u5929\u8bfb\u5b8c3\u672c\u82f1\u6587\u4e66\uff0c\u4eca\u5929\u662f\u7b2c2\u5929",
+	"teacher_notes_url": "http://reading.baicizhan.com/article/5d183bfd4656fc2ffbcdddad3cc90251",
+	"current_learn_day": 2,
+	"learn_book_count": 3
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>文章</title>
+    <meta name="description" content="result">
+    <script src="./jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+
+        audio {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        #inputTime {
+            margin-top: 10px;
+            width: 170px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div>
+    <input type="text" id="inputTime" onkeydown='if(event.keyCode==13){initData();}'>
+    <input type="button" value="确认" onclick="initData()">
+    <a href='#' id="teacherData">讲义</a>
+    <a href='./setting.html' id="setting">设置</a>
+</div>
+<div id="audioData"></div>
+<!-- <div id="teacherData"></div> -->
+<div id="resultData"></div>
+<input type="button" value="去做题" onclick="goQuestionClick()">
+</body>
+<script>
+    var startClickCount = 3;//点击几次开始播放
+    var endClickCount = 2;//点击几次暂停播放
+    var timeOutTime = 200;//倒计时时间
+    var currentPosition = -1;//当前点击的位置
+    var positionCount = 0;//当前点击位置的点击次数
+    var timeOutEvent = 0;//倒计时
+    window.onload = function () {//加载上次数据，如果没有使用默认数据
+        if (!localStorage.time) {
+            localStorage.time = "2017-11-16";
+            localStorage.startClickCount = 3;
+            localStorage.endClickCount = 2;
+            localStorage.timeOutTime = 200;
+        } else {
+            startClickCount = localStorage.startClickCount;
+            endClickCount = localStorage.endClickCount;
+            timeOutTime = localStorage.timeOutTime;
+        }
+        var currentTime = getCurrentTime();
+        if(!localStorage[currentTime]){
+            localStorage.time = currentTime;
+            localStorage[currentTime] = true;
+        }
+        $("#inputTime").attr("value", localStorage.time);
+        initData(localStorage.time);
+    }
+
+    //加载文件
+    function initData(time) {
+        if (!time) {
+            time = $("#inputTime").val();
+        }
+        var dayTimes = parseInt(time);
+        if (dayTimes <= 100) {//如果输入的是第几天，转化一下时间
+            dayTimes = addTime(dayTimes);
+        } else {
+            dayTimes = time;
+        }
+        localStorage.time = dayTimes;
+        if(window.wzNative){
+            var jsonData = wzNative.getJsonFromFile(dayTimes);
+            localStorage.data = jsonData;
+            jsonData = JSON.parse(jsonData);
+            loadData(dayTimes, jsonData);
+            return;
+        }
+        $.ajax({
+            url: "./docdata/" + dayTimes + ".json",
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {//获取文件内容成功，刷新UI
+                localStorage.data = JSON.stringify(data);
+                loadData(dayTimes, data);
+            },
+            error: function (error) {//获取文件失败
+                alert(JSON.stringify(error));
+            }
+        })
+    }
+
+    function updateJyUrl(time) {
+        if(window.wzNative){
+            var filePath = wzNative.getFilePath(time,"htm");
+            if(filePath == "-1"){
+                $("#teacherData").attr("href", "#");
+                $("#teacherData").text("无讲义");
+            }else{
+                $("#teacherData").attr("href", filePath);
+                $("#teacherData").text("讲义");
+            }
+            return;
+        }
+        $.ajax({
+            url: "./jydata/" + time + ".htm",
+            type: 'GET',
+            dataType: 'html',
+            success: function (data) {//获取文件内容成功，有讲义，更新地址
+                $("#teacherData").attr("href", "./jydata/" + time + ".htm");
+                $("#teacherData").text("讲义");
+            },
+            error: function (error) {//获取文件失败，无讲义
+                $("#teacherData").attr("href", "#");
+                $("#teacherData").text("无讲义");
+            }
+        })
+    }
+
+    //刷新UI
+    function loadData(time, data) {
+        //更新讲义地址
+        updateJyUrl(time);
+        //更新声音
+        var audioData;
+        if(window.wzNative){
+            audioData = "<audio id='myAudio' src="+wzNative.getFilePath(time,"mp3")+">您的浏览器不支持 audio 标签。</audio>";
+        }else{
+            audioData = "<audio id='myAudio' src='./audiodata/" + time + ".mp3'>您的浏览器不支持 audio 标签。</audio>";
+        }
+        document.getElementById("audioData").innerHTML = audioData;
+        //准备文章数据
+        var htmlData = "";
+        for (item in data.article_info.sentences) {
+            var itemString = data.article_info.sentences[item];
+            var time = data.article_info.audio_info.time_list[item];
+            var nextTime = 1000000000;
+            if (item < data.article_info.sentences.length - 1) {
+                nextTime = data.article_info.audio_info.time_list[parseInt(item) + 1];
+            }
+            if (itemString.type != "title") {
+                itemString.sentence = "<h4 class='sentenceItem' position=" + item + " time=" + data.article_info.audio_info.time_list[item] + " nextTime=" + nextTime + " >" + itemString.sentence + "</h4>";
+            } else {
+                itemString.sentence = itemString.sentence.replace("<h3>", "<h2 class='sentenceItem' position=" + item + " time=" + data.article_info.audio_info.time_list[item] + " nextTime=" + nextTime + " >");
+                itemString.sentence = itemString.sentence.replace("</h3>", "</h2>");
+            }
+            htmlData += itemString.sentence;
+        }
+        document.getElementById("resultData").innerHTML = htmlData;
+        //添加点击事件
+        $("input:text").click(function () {
+            $(this).select();
+        });
+        $(".sentenceItem").click(function (obj) {
+            //如果正在倒计时，停止倒计时，因为点击了
+            if (timeOutEvent != 0) {
+                clearTimeout(timeOutEvent);
+                timeOutEvent = 0;
+            }
+            var position = $(obj.target).attr("position");
+            if (position != currentPosition) {
+                //如果点击的position！=上一次记录的position，更新currentPosition,重置positionCount，
+                currentPosition = $(obj.target).attr("position");
+                positionCount = 1;
+            } else {
+                //如果是上次记录的position，positionCount增加一次
+                positionCount++;
+            }
+            if (setCurrentTime($(obj.target).attr("time"), $(obj.target).attr("nextTime"))) {
+                //如果这次点击有效（使声音，暂停或者播放），清除倒计时，重置currentPosition,重置positionCount，
+                clearTimeout(timeOutEvent);
+                resetPosition();
+            } else {
+                //如果这次点击无效，启动倒计时
+                timeOutEvent = setTimeout("resetPosition()", timeOutTime);
+            }
+        });
+    }
+
+    function resetPosition() {
+        currentPosition = -1
+        positionCount = 0;
+        timeOutEvent = 0;
+    }
+
+    function setCurrentTime(time, nextTime) {//设置播放
+        var myAudio = document.getElementById("myAudio");
+        if (myAudio.currentTime <= time || myAudio.currentTime >= nextTime) {
+            //如果当前播放位置不在点击位置
+            if (positionCount < startClickCount) {
+                //如果点击次数不够，点击无效
+                return false;
+            }
+            //当前播放位置不在点击位置，并且达到点击次数，点击有效，直接开始播放
+            myAudio.currentTime = time;
+            myAudio.play();
+            return true;
+        } else if (myAudio.paused) {
+            //如果当前播放位置在点击位置，并且正在暂停中
+            if (positionCount < startClickCount) {
+                //如果点击次数不够，点击无效
+                return false;
+            }
+            //当前播放位置在点击位置，并且正在暂停中，并且达到点击次数，点击有效，开始播放
+            myAudio.play();
+            return true;
+        } else {
+            //如果当前播放位置在点击位置，并且正在播放
+            if (positionCount < endClickCount) {
+                //如果点击次数不够，点击无效
+                return false;
+            }
+            //当前播放位置在点击位置，并且正在播放，并且达到点击次数，点击有效，暂停播放
+            myAudio.currentTime = myAudio.currentTime - 3;
+            myAudio.pause();
+            return true;
+        }
+    }
+
+    function goQuestionClick() {
+        location.href = "./question.html";
+    }
+
+    function addTime(time) {
+        var a = new Date("2017-11-15")
+        a = a.valueOf()
+        a = a + time * 24 * 60 * 60 * 1000
+        a = new Date(a)
+        var year = a.getFullYear();
+        var month = (a.getMonth() + 1) + "";
+        if (month.length < 2) {
+            month = "0" + month;
+        }
+        var day = (a.getDate()) + "";
+        if (day.length < 2) {
+            day = "0" + day;
+        }
+        return year + "-" + month + "-" + day;
+    }
+
+    function getCurrentTime() {
+        var a = new Date()
+        var year = a.getFullYear();
+        var month = (a.getMonth() + 1) + "";
+        if (month.length < 2) {
+            month = "0" + month;
+        }
+        var day = (a.getDate()) + "";
+        if (day.length < 2) {
+            day = "0" + day;
+        }
+        return year + "-" + month + "-" + day;
+    }
+
+</script>
+
+</html>

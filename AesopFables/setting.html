@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.2.1.min.js"></script>
+    <title>设置</title>
+</head>
+
+<body>
+    <div class="group">
+        <font>开始播放点击次数</font>
+        <input type="text" id="startClickCount">
+    </div>
+    <div class="group">
+        <font>停止播放点击次数</font>
+        <input type="text" id="endClickCount">
+    </div>
+    <div class="group">
+        <font>单词点击最大间隔</font>
+        <input type="text" id="timeOutTime">
+        <font>(毫秒)</font>
+    </div>
+    <div>
+        <input type="button" value="保存" onclick="saveClick()">
+    </div>
+    <script>
+        window.onload = function(){
+            $("#startClickCount").attr("value",localStorage.startClickCount);
+            $("#endClickCount").attr("value",localStorage.endClickCount);
+            $("#timeOutTime").attr("value",localStorage.timeOutTime);
+        }
+        function saveClick(){
+            localStorage.startClickCount = $("#startClickCount").val();
+            localStorage.endClickCount = $("#endClickCount").val();
+            localStorage.timeOutTime = $("#timeOutTime").val();
+            location.replace("./index.html");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./jquery-3.2.1.min.js"></script>
+    <title>问题</title>
+    <style>
+        .selectAnswer {
+            background: #fe672e;
+            color: #fff;
+        }
+
+        .answer {
+            background: #00b050;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<div id="questionList"></div>
+<div id="answer" click="answerClick()"></div>
+<input type="button" value="查看答案" onclick="answerClick()">
+<script>
+    window.onload = function () {
+        var data = JSON.parse(localStorage.data);
+        var htmlData = "";
+        var answerData = "";
+        for (itemProblem in data.problem_info) {
+            var itemProblemData = data.problem_info[itemProblem];
+            htmlData += "<div><h4>" + (parseInt(itemProblem) + 1) + ":    " + itemProblemData.question.en + "</h4>";
+            for (optionItem in itemProblemData.options) {
+                var optionItemData = itemProblemData.options[optionItem];
+                var optionA;
+                switch (optionItem) {
+                    case "0":
+                        optionA = "A:";
+                        break;
+                    case "1":
+                        optionA = "B:";
+                        break;
+                    case "2":
+                        optionA = "C:";
+                        break;
+                    case "3":
+                        optionA = "D:";
+                        break;
+                    default:
+                        optionA = "A:";
+                        break;
+                }
+                htmlData += "<p class='answerItem' problemPosition=" + itemProblem + "  answerPosition=" + optionItem + " > " + optionA + optionItemData.en + "</p>";
+            }
+            htmlData += "<p class='answer'>" + itemProblemData.analysis + "</p></div>";
+//            answerData += "<h5>" + (parseInt(itemProblem) + 1) + ":    " + itemProblemData.analysis + "</h5></div>";
+        }
+        $("#questionList").append(htmlData);
+        $(".answer").hide();
+        $(".answerItem").click(function () {
+            $(this).siblings().removeClass("selectAnswer");
+            $(this).addClass("selectAnswer");
+        })
+
+    }
+
+    function answerClick() {
+        $(".answer").show();
+        $(window).scrollTop(0);
+    }
+</script>
+</body>
+
+</html>
