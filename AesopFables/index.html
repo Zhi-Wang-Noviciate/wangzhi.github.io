@@ -41,8 +41,8 @@
 <input type="button" value="去做题" onclick="goQuestionClick()">
 </body>
 <script>
-    var startClickCount = 3;//点击几次开始播放
-    var endClickCount = 2;//点击几次暂停播放
+    var startClickCount = 1;//点击几次开始播放
+    var endClickCount = 1;//点击几次暂停播放
     var timeOutTime = 200;//倒计时时间
     var currentPosition = -1;//当前点击的位置
     var positionCount = 0;//当前点击位置的点击次数
@@ -50,8 +50,8 @@
     window.onload = function () {//加载上次数据，如果没有使用默认数据
         if (!localStorage.time) {
             localStorage.time = "2017-11-16";
-            localStorage.startClickCount = 3;
-            localStorage.endClickCount = 2;
+            localStorage.startClickCount = 1;
+            localStorage.endClickCount = 1;
             localStorage.timeOutTime = 200;
         } else {
             startClickCount = localStorage.startClickCount;
