@@ -70,7 +70,6 @@
 
     //加载文件
     function initData(time) {
-        $("#inputTime").attr("value", localStorage.time);
         if (!time) {
             time = $("#inputTime").val();
         }
@@ -81,6 +80,7 @@
             dayTimes = time;
         }
         localStorage.time = dayTimes;
+        $("#inputTime").attr("value", localStorage.time);
         if(window.wzNative){
             var jsonData = wzNative.getJsonFromFile(dayTimes);
             localStorage.data = jsonData;
@@ -100,7 +100,6 @@
                 alert(JSON.stringify(error));
             }
         })
-        scrollTo(0,0);
     }
 
     function updateJyUrl(time) {
@@ -132,6 +131,7 @@
 
     //刷新UI
     function loadData(time, data) {
+        scrollTo(0,0);
         //更新讲义地址
         updateJyUrl(time);
         //更新声音
