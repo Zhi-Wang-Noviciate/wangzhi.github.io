@@ -39,6 +39,8 @@
 <!-- <div id="teacherData"></div> -->
 <div id="resultData"></div>
 <input type="button" value="去做题" onclick="goQuestionClick()">
+<input type="button" value="前一天" onclick="initData(addTime(-1,localStorage.time))">
+<input type="button" value="后一天" onclick="initData(addTime(1,localStorage.time))">
 </body>
 <script>
     var startClickCount = 1;//点击几次开始播放
@@ -63,12 +65,12 @@
             localStorage.time = currentTime;
             localStorage[currentTime] = true;
         }
-        $("#inputTime").attr("value", localStorage.time);
         initData(localStorage.time);
     }
 
     //加载文件
     function initData(time) {
+        $("#inputTime").attr("value", localStorage.time);
         if (!time) {
             time = $("#inputTime").val();
         }
@@ -98,6 +100,7 @@
                 alert(JSON.stringify(error));
             }
         })
+        scrollTo(0,0);
     }
 
     function updateJyUrl(time) {
@@ -231,8 +234,11 @@
         location.href = "./question.html";
     }
 
-    function addTime(time) {
-        var a = new Date("2017-11-15")
+    function addTime(time,currentTime) {
+        if (!currentTime){
+            currentTime = "2017-11-15";
+        }
+        var a = new Date(currentTime)
         a = a.valueOf()
         a = a + time * 24 * 60 * 60 * 1000
         a = new Date(a)
