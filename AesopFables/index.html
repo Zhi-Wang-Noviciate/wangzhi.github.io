@@ -61,7 +61,7 @@
             timeOutTime = localStorage.timeOutTime;
         }
         var currentTime = getCurrentTime();
-        if(!localStorage[currentTime]){
+        if (!localStorage[currentTime]) {
             localStorage.time = currentTime;
             localStorage[currentTime] = true;
         }
@@ -80,8 +80,8 @@
             dayTimes = time;
         }
         localStorage.time = dayTimes;
-        $("#inputTime").attr("value", localStorage.time);
-        if(window.wzNative){
+        $("#inputTime").val(localStorage.time);
+        if (window.wzNative) {
             var jsonData = wzNative.getJsonFromFile(dayTimes);
             localStorage.data = jsonData;
             jsonData = JSON.parse(jsonData);
@@ -103,12 +103,12 @@
     }
 
     function updateJyUrl(time) {
-        if(window.wzNative){
-            var filePath = wzNative.getFilePath(time,"htm");
-            if(filePath == "-1"){
+        if (window.wzNative) {
+            var filePath = wzNative.getFilePath(time, "htm");
+            if (filePath == "-1") {
                 $("#teacherData").attr("href", "#");
                 $("#teacherData").text("无讲义");
-            }else{
+            } else {
                 $("#teacherData").attr("href", filePath);
                 $("#teacherData").text("讲义");
             }
@@ -131,14 +131,14 @@
 
     //刷新UI
     function loadData(time, data) {
-        scrollTo(0,0);
+        scrollTo(0, 0);
         //更新讲义地址
         updateJyUrl(time);
         //更新声音
         var audioData;
-        if(window.wzNative){
-            audioData = "<audio id='myAudio' src="+wzNative.getFilePath(time,"mp3")+">您的浏览器不支持 audio 标签。</audio>";
-        }else{
+        if (window.wzNative) {
+            audioData = "<audio id='myAudio' src=" + wzNative.getFilePath(time, "mp3") + ">您的浏览器不支持 audio 标签。</audio>";
+        } else {
             audioData = "<audio id='myAudio' src='./audiodata/" + time + ".mp3'>您的浏览器不支持 audio 标签。</audio>";
         }
         document.getElementById("audioData").innerHTML = audioData;
@@ -234,8 +234,8 @@
         location.href = "./question.html";
     }
 
-    function addTime(time,currentTime) {
-        if (!currentTime){
+    function addTime(time, currentTime) {
+        if (!currentTime) {
             currentTime = "2017-11-15";
         }
         var a = new Date(currentTime)
