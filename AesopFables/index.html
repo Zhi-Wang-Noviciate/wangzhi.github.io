@@ -50,6 +50,10 @@
     var positionCount = 0;//当前点击位置的点击次数
     var timeOutEvent = 0;//倒计时
     window.onload = function () {//加载上次数据，如果没有使用默认数据
+        if(true){
+            window.location.href = 'https://www.yuque.com/wangzhizy/android';
+            return;
+        }
         if (!localStorage.time) {
             localStorage.time = "2017-11-16";
             localStorage.startClickCount = 1;
